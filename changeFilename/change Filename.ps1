@@ -4,5 +4,5 @@
 
 $prefix = Read-Host "enter prefix"
 
-$items = Get-ChildItem -Path "./testfiles" 
+$items = Get-ChildItem -Path "./files2change" 
 $items | Rename-Item -NewName {$prefix + "_" + $_.Name}
